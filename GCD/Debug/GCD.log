@@ -1,3 +1,3 @@
 ﻿  gcd.cpp
-C:\Users\karth\Documents\Visual Studio 2019\Projects\GCD\gcd.cpp(35,19): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
+C:\Users\karth\Documents\Visual Studio 2019\Projects\GCD\gcd.cpp(36,23): warning C4244: 'initializing': conversion from 'double' to '__int64', possible loss of data
   GCD.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\GCD\Debug\GCD.exe
