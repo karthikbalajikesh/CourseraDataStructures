@@ -51,7 +51,7 @@ long long int gcd_euclidian(long long int n1, long long int n2) {
 
 	}
 	else {
-		return (n2, n1 % n2);
+		return gcd_euclidian(n2, n1 % n2);
 
 	}
 
