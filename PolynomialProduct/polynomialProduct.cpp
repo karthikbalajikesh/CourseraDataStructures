@@ -83,8 +83,18 @@ vector<int> fast_poly_mult(vector<int> A1, vector<int> A2) {
 	// We will use the Karatsuba Algorithm. 
 	/* We will convert polynomial into D1, D0, E1, E0
 		and find D0E0 and D1E1 and (D1+D0)(E1+E0) */
+
+	// Assume both polynomials are of the same order.
 	int n = A1.size();
-	vector<int> D1;
+	// create the result vector
+	vector<int> result((2 * n) - 1, 0);
+	// First the base case:
+	if (n == 1) {
+		result[0] = A1[0] * A2[0];
+	}
+	
+
+	// to continue from here
 	vector<int> D0;
 	vector<int> E1;
 	vector<int> E0;
