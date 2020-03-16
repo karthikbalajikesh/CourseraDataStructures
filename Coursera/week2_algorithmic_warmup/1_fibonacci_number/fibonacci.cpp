@@ -1,5 +1,9 @@
 #include <iostream>
 #include <cassert>
+#include<vector>
+#include<algorithm>
+
+using namespace std;
 
 // The following code calls a naive algorithm for computing a Fibonacci number.
 //
@@ -21,10 +25,20 @@ int fibonacci_naive(int n) {
     return fibonacci_naive(n - 1) + fibonacci_naive(n - 2);
 }
 
-int fibonacci_fast(int n) {
+long long fibonacci_fast(int n) {
     // write your code here
+	vector<long long> fib;
+	fib.push_back(0);
+	fib.push_back(1);
+	for(int i=2;i<=n;i++){
+			// base cases
+			
+			fib.push_back(fib[i-1]+fib[i-2]);
+			
+			
+	}
 
-    return 0;
+    return fib[n];
 }
 
 void test_solution() {
@@ -38,7 +52,7 @@ int main() {
     int n = 0;
     std::cin >> n;
 
-    std::cout << fibonacci_naive(n) << '\n';
+    std::cout << fibonacci_fast(n) << '\n';
     //test_solution();
     //std::cout << fibonacci_fast(n) << '\n';
     return 0;
