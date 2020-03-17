@@ -1,0 +1,6 @@
+﻿  fractional_knapsack.cpp
+C:\Users\karth\Documents\Visual Studio 2019\Projects\Knapsack\fractional_knapsack.cpp(15,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\Knapsack\fractional_knapsack.cpp(24,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\Knapsack\fractional_knapsack.cpp(37,15): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
+C:\Users\karth\Documents\Visual Studio 2019\Projects\Knapsack\fractional_knapsack.cpp(56,43): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  Knapsack.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\Knapsack\Debug\Knapsack.exe

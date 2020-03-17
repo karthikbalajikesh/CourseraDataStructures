@@ -1,0 +1,4 @@
+﻿  carfuel.cpp
+C:\Users\karth\Documents\Visual Studio 2019\Projects\CarFuel\carfuel.cpp(17,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\CarFuel\carfuel.cpp(89,23): warning C4018: '<=': signed/unsigned mismatch
+  CarFuel.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\CarFuel\Debug\CarFuel.exe
