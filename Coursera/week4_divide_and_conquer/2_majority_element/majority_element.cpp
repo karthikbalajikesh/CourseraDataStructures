@@ -1,22 +1,39 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
+#include<iostream>
+#include<vector>
+#include<algorithm>
+#include<map>
 
-using std::vector;
+using namespace std;
+// the fastest solution can be obtained using maps
 
-int get_majority_element(vector<int> &a, int left, int right) {
-  if (left == right) return -1;
-  if (left + 1 == right) return a[left];
-  //write your code here
-  return -1;
+int findMajority(vector<int>& votes) {
+	int majority_value = votes.size() / 2;
+	map<int, int> entries;
+	for (int i = 0;i<votes.size();i++) {
+		// initialize all the entries of the map
+		entries[votes[i]] = 0;
+	}
+	for (int i = 0;i<votes.size();i++) {
+		// initialize all the entries of the map
+		entries[votes[i]]++;
+		if (entries[votes[i]] >(votes.size()/2)) {
+			return 1;
+		}
+	}
+
+	return 0;
 }
 
 int main() {
-  int n;
-  std::cin >> n;
-  vector<int> a(n);
-  for (size_t i = 0; i < a.size(); ++i) {
-    std::cin >> a[i];
-  }
-  std::cout << (get_majority_element(a, 0, a.size()) != -1) << '\n';
+	// we construct the problem here
+	int n=0;
+	cin >> n;
+	int temp;
+	vector<int> votes;
+	for (int i = 0; i < n;i++) {
+		cin >> temp;
+		votes.push_back(temp);
+	}
+
+	cout << findMajority(votes);// we should only print whether majority occurs or not
 }
