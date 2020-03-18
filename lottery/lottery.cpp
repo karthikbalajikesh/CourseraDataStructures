@@ -18,9 +18,8 @@ vector<int> fast_count_segments(vector<int> starts, vector<int> ends, vector<int
 			entries[starts[i]] = "start";
 			entries[ends[i]] = "end";
 		}
-		if (i < m) {
-			entries[points[i]] = "point";
-		}
+		
+
 	}
 	//write your code here
 	for (auto x : entries) {
