@@ -1,0 +1,3 @@
+﻿  equalWeights.cpp
+C:\Users\karth\Documents\Visual Studio 2019\Projects\zeroOneKnapsack\equalWeights.cpp(87,19): warning C4018: '<': signed/unsigned mismatch
+  zeroOneKnapsack.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\zeroOneKnapsack\Debug\zeroOneKnapsack.exe
