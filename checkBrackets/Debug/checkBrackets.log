@@ -1,0 +1,4 @@
+﻿  checkBrackets.cpp
+C:\Users\karth\Documents\Visual Studio 2019\Projects\checkBrackets\checkBrackets.cpp(25,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\checkBrackets\checkBrackets.cpp(69,13): warning C4018: '>': signed/unsigned mismatch
+  checkBrackets.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\checkBrackets\Debug\checkBrackets.exe
