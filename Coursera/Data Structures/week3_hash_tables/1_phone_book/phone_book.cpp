@@ -1,72 +1,83 @@
-#include <iostream>
-#include <vector>
-#include <string>
+// Karthik Balaji Keshavamurthi - 3/25/2019
+// PhoneBook API that performs the following operation:
+// Add a number to the phone book
+// Delete a number from the phonebook
+// Find the name associated with the number
 
-using std::string;
-using std::vector;
-using std::cin;
+// We will use Hash map to perform this operation
 
-struct Query {
-    string type, name;
-    int number;
+#include<iostream>
+#include<vector>
+#include<string>
+#include<map>
+#include<algorithm>
+
+using namespace std;
+
+
+// construct a class for the Phonebook
+class Phonebook {
+private:
+	map<int, string> PhoneBook;
+public:
+	Phonebook() {
+		// Empty constructor
+	}
+	void AddtoPhonebook(int n,string s1) {
+		PhoneBook[n] = s1;
+	}
+	void DeletefromPhonebook(int n) {
+		auto it = PhoneBook.find(n);
+		if (it != PhoneBook.end()) {
+			PhoneBook.erase(n);
+		}
+	}
+	string findEntry(int n) {
+		auto it = PhoneBook.find(n);
+		if (it != PhoneBook.end()) {
+			return PhoneBook[n];
+		}
+		else {
+			return "not found";
+		}
+	}
+
+	void SolveQueries() {
+		vector<string> results;
+		int numQueries = 0;
+		int number = 0;
+		string operation;
+		string name;
+		cin >> numQueries;
+		for (int query = 0; query < numQueries;query++) {
+			cin >> operation;
+			if (operation == "find") {
+				cin >> number;
+				results.push_back(findEntry(number));
+			}
+			else if (operation == "add") {
+				cin >> number >> name;
+				AddtoPhonebook(number, name);
+
+			}
+			else if (operation == "del") {
+				cin >> number;
+				DeletefromPhonebook(number);
+			}
+		}
+		publishResult(results);
+
+	}
+
+	void publishResult(vector<string> results) {
+		for (int i = 0; i < results.size();i++) {
+			cout << results[i] << endl;
+		}
+	}
 };
 
-vector<Query> read_queries() {
-    int n;
-    cin >> n;
-    vector<Query> queries(n);
-    for (int i = 0; i < n; ++i) {
-        cin >> queries[i].type;
-        if (queries[i].type == "add")
-            cin >> queries[i].number >> queries[i].name;
-        else
-            cin >> queries[i].number;
-    }
-    return queries;
-}
-
-void write_responses(const vector<string>& result) {
-    for (size_t i = 0; i < result.size(); ++i)
-        std::cout << result[i] << "\n";
-}
-
-vector<string> process_queries(const vector<Query>& queries) {
-    vector<string> result;
-    // Keep list of all existing (i.e. not deleted yet) contacts.
-    vector<Query> contacts;
-    for (size_t i = 0; i < queries.size(); ++i)
-        if (queries[i].type == "add") {
-            bool was_founded = false;
-            // if we already have contact with such number,
-            // we should rewrite contact's name
-            for (size_t j = 0; j < contacts.size(); ++j)
-                if (contacts[j].number == queries[i].number) {
-                    contacts[j].name = queries[i].name;
-                    was_founded = true;
-                    break;
-                }
-            // otherwise, just add it
-            if (!was_founded)
-                contacts.push_back(queries[i]);
-        } else if (queries[i].type == "del") {
-            for (size_t j = 0; j < contacts.size(); ++j)
-                if (contacts[j].number == queries[i].number) {
-                    contacts.erase(contacts.begin() + j);
-                    break;
-                }
-        } else {
-            string response = "not found";
-            for (size_t j = 0; j < contacts.size(); ++j)
-                if (contacts[j].number == queries[i].number) {
-                    response = contacts[j].name;
-                    break;
-                }
-            result.push_back(response);
-        }
-    return result;
-}
-
 int main() {
-    write_responses(process_queries(read_queries()));
-    return 0;
+	Phonebook book1;
+	book1.SolveQueries();
+	return 0;
 }

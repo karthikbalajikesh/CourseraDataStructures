@@ -1,6 +1,6 @@
 # Data Structures and Algorithms
 
-Project 2 folder is the Quicksort with a partitioning of 3 elements.
+Project 2 folder is the Quicksort with 3 partitions.
 
 Course 1 - Completed (Algorithms Toolbox)
-Course 2 - in week 2 (Data Structures)
+Course 2 - in week 4 (Data Structures)
