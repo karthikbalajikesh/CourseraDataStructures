@@ -7,3 +7,5 @@ Project1/
 *.filters
 .vm/
 *.opendb
+*.py
+*.java

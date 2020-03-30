@@ -1,0 +1,4 @@
+﻿  CalcII.cpp
+C:\Users\karth\Documents\Visual Studio 2019\Projects\Leetcode\227 Basic Calculator II\BasicCalculatorII\CalcII.cpp(27,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\Leetcode\227 Basic Calculator II\BasicCalculatorII\CalcII.cpp(31,14): warning C4018: '<': signed/unsigned mismatch
+  BasicCalculatorII.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\Leetcode\227 Basic Calculator II\BasicCalculatorII\Debug\BasicCalculatorII.exe
