@@ -1,0 +1,11 @@
+﻿  Source.cpp
+C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Source.cpp(52,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Source.cpp(69,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Source.cpp(73,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Source.cpp(86,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Source.cpp(103,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Source.cpp(114,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Source.cpp(126,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Source.cpp(156,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Source.cpp(170,21): warning C4018: '<': signed/unsigned mismatch
+  DirectedGraph.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\DirectedGraph\Debug\DirectedGraph.exe

@@ -1,0 +1,3 @@
+﻿  Source.cpp
+C:\Users\karth\Documents\Visual Studio 2019\Projects\GraphCheckExit\Source.cpp(43,20): warning C4018: '<': signed/unsigned mismatch
+  GraphCheckExit.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\GraphCheckExit\Debug\GraphCheckExit.exe
