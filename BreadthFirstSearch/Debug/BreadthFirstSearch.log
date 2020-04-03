@@ -1,0 +1,5 @@
+﻿  Source.cpp
+C:\Users\karth\Documents\Visual Studio 2019\Projects\BreadthFirstSearch\Source.cpp(37,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\BreadthFirstSearch\Source.cpp(57,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\BreadthFirstSearch\Source.cpp(65,23): warning C4018: '<': signed/unsigned mismatch
+  BreadthFirstSearch.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\BreadthFirstSearch\Debug\BreadthFirstSearch.exe
