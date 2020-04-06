@@ -1,0 +1,6 @@
+﻿  Source.cpp
+C:\Users\karth\Documents\Visual Studio 2019\Projects\WeightedGraph\Source.cpp(58,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\WeightedGraph\Source.cpp(99,25): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\WeightedGraph\Source.cpp(224,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\karth\Documents\Visual Studio 2019\Projects\WeightedGraph\Source.cpp(238,21): warning C4018: '<': signed/unsigned mismatch
+  WeightedGraph.vcxproj -> C:\Users\karth\Documents\Visual Studio 2019\Projects\WeightedGraph\Debug\WeightedGraph.exe
